@@ -1,0 +1,81 @@
+body {
+  max-width: 2048px;
+}
+
+.projects-list {
+  overflow: hidden;
+  padding: 0;
+}
+.projects-list li {
+  float: left;
+  height: auto;
+  list-style: none;
+  position: relative;
+  width: 25%;
+}
+
+.project-wrapper {
+  display: block;
+  margin: 4px;
+  padding: 20px 0;
+  position: relative;
+}
+
+.overlay {
+  background-color: black;
+  color: white;
+  margin: 0 auto;
+  position: absolute;
+  width: 100%;
+}
+.overlay p {
+  font-size: 0.85em;
+  margin: 4px;
+}
+
+.project-background {
+  height: 100%;
+  opacity: 0.1;
+  top: 0;
+}
+.project-background:hover {
+  opacity: 0;
+}
+
+img.project {
+  display: block;
+  height: 180px;
+  margin: 8px auto;
+  width: auto;
+}
+
+.project-title {
+  font-weight: bold;
+  opacity: 0.8;
+  top: 0;
+}
+.project-tagline {
+  background: black;
+  bottom: 0;
+  font-weight: normal;
+  opacity: 0.8;
+}
+
+@media (min-device-width: 1021px) and (max-width: 1360px) {
+  .projects-list li {
+    width: 33.33333%;
+  }
+}
+
+@media (min-device-width: 681px) and (max-width: 1020px) {
+  .projects-list li {
+    width: 50%;
+  }
+}
+
+@media (max-width : 680px) {
+  .projects-list li {
+    height: auto;
+    width: 100%;
+  }
+}
