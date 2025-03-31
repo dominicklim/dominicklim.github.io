@@ -89,6 +89,9 @@ ul.emoji-list {
   padding: 0;
 }
 
+a.company {
+  font-weight: bold;
+}
 
 ul.emoji-list li {
   display: flex;
